@@ -1,3 +1,8 @@
+/*
+This was a final project created for my Computer Science and Programming class at Rowan University.
+Devon Barclay
+May 2020
+*/
 #include <iostream>
 #include <array>
 #include <vector>
@@ -101,7 +106,7 @@ int main() {
         do {
             cout << "Which family number would like to make a room service order?" << endl;
             cin >> roomServiceFamily;
-            while (roomServiceFamily > NUM_FAMILIES) {//keeps showing up untill they answer a valid number
+            while (roomServiceFamily > NUM_FAMILIES) { //keeps showing up untill they answer a valid number
                 cout << "Invalid selection. family number " << roomServiceFamily << " does not exist." << endl;
                 cout << "Number must be less than number of families registered: " << NUM_FAMILIES << endl;
                 cout << "Which family number would like to make a room service order?" << endl;
@@ -144,7 +149,6 @@ int main() {
         for (i = 0; i < NUM_FAMILIES; i++ ) {
             cout << "The total cost for family " << i + 1 << " is $" << chargeFamily.at(i + 1) << endl;
         }
-        
     }
-    }
+}
 
